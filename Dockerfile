@@ -19,7 +19,7 @@ ENV PATH=$BUN_INSTALL/bin:$PATH
 
 COPY . .
 
-EXPOSE 4000
+EXPOSE 8080
 
 RUN bun install
 
