@@ -36,7 +36,7 @@ job.start();
 mkdir(FILES_FOLDER, { recursive: true });
 
 Bun.serve({
-  port: 4000,
+  port: 8080,
   maxRequestBodySize: 1024 * 1024 * 50, // 50MB
   async fetch(req) {
     const { pathname, searchParams } = new URL(req.url);
